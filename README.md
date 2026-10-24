@@ -10,13 +10,15 @@ Small, explainable tools for understanding agent tool use.
 | --- | --- | --- |
 | [mcp-changecheck](https://github.com/L1Huash1/mcp-changecheck) | **Before a tool upgrade** — compare MCP tool snapshots and review contract changes. | 升级工具前，检查接口变化是否可能影响 Agent。提供离线 HTML 报告和 GitHub 自动检查接入。 |
 | [agent-tracecheck](https://github.com/L1Huash1/agent-tracecheck) | **After a recorded run** — inspect repeated calls, errors, incomplete calls and budgets. | 运行后，定位重复调用、失败和未完成步骤。可选接入 LangChain 的本地工具回调。 |
+| [agent-ci-starter](https://github.com/L1Huash1/agent-ci-starter) | **Try the complete workflow** — copy a project that connects both checks. | 从完整入门项目开始：本地工具示例、接口快照、调用记录和 GitHub 检查。 |
 
-Both projects provide local examples, English/Chinese documentation and regression tests. Their bundled demonstrations need no paid model API.
+The projects provide local examples, English/Chinese documentation and regression tests. Their bundled demonstrations need no paid model API.
 
-两个项目都附有可在本地体验的示例、中英文说明和自动测试。示例不需要付费模型 API。
+项目都附有可在本地体验的示例、中英文说明和自动测试。示例不需要付费模型 API。
 
 ## Start here / 从这里开始
 
+- [完整入门项目](https://github.com/L1Huash1/agent-ci-starter/blob/main/README.zh-CN.md) — new to these tools? Start with the scripted, model-free workflow.
 - [MCP 中文入门](https://github.com/L1Huash1/mcp-changecheck/blob/main/README.zh-CN.md) · [Report walkthrough](https://github.com/L1Huash1/mcp-changecheck/blob/main/docs/walkthrough.md)
 - [Agent 调用诊断中文入门](https://github.com/L1Huash1/agent-tracecheck/blob/main/README.zh-CN.md) · [LangChain integration](https://github.com/L1Huash1/agent-tracecheck/blob/main/docs/langchain.md)
 
