@@ -9,10 +9,10 @@ Small, local tools for developing and testing agent tool use.
 | Project | When to use it | 可以解决什么问题 |
 | --- | --- | --- |
 | [context-budgetpack](https://github.com/L1Huash1/context-budgetpack) | **Before sending context** — select explicit file fragments within a hard UTF-8 byte cap. | 按优先级与行范围整理文件，解释取舍，并核验来源是否改变。附离线选择报告。 |
-| [tool-mockbox](https://github.com/L1Huash1/tool-mockbox) | **While testing calling code** — script tool failures, recovery, delays and cancellation. | 本地重现“前两次失败，第三次成功”，检查重试代码，并查看调用报告。 |
+| [tool-mockbox](https://github.com/L1Huash1/tool-mockbox) | **While testing calling code** — script failures, recovery, delays and cancellation; optional MCP integration. | 本地重现“前两次失败，第三次成功”，检查重试代码。可选通过 MCP 调用合成工具。 |
 | [mcp-changecheck](https://github.com/L1Huash1/mcp-changecheck) | **Before a tool upgrade** — compare MCP tool snapshots and review contract changes. | 升级工具前，检查接口变化是否可能影响 Agent。提供离线 HTML 报告和 GitHub 自动检查接入。 |
 | [agent-tracecheck](https://github.com/L1Huash1/agent-tracecheck) | **After a recorded run** — inspect repeated calls, errors, incomplete calls and budgets. | 运行后，定位重复调用、失败和未完成步骤。可选接入 LangChain 的本地工具回调。 |
-| [agent-ci-starter](https://github.com/L1Huash1/agent-ci-starter) | **Try the complete workflow** — copy a project that connects both checks. | 从完整入门项目开始：本地工具示例、接口快照、调用记录和 GitHub 检查。 |
+| [agent-ci-starter](https://github.com/L1Huash1/agent-ci-starter) | **Try the complete workflow** — context, scripted recovery, recorded calls and CI. | 从完整入门项目开始：上下文、故障恢复、调用诊断和 GitHub 检查。 |
 
 The projects provide local examples, English/Chinese documentation and regression tests. Their bundled demonstrations need no paid model API.
 
@@ -20,6 +20,7 @@ The projects provide local examples, English/Chinese documentation and regressio
 
 ## Start here / 从这里开始
 
+- [我该从哪个项目开始？](https://github.com/L1Huash1/L1Huash1/blob/main/START-HERE.zh-CN.md) — 中文选型、MCP 入门和免安装查看示例报告的方法。
 - [完整入门项目](https://github.com/L1Huash1/agent-ci-starter/blob/main/README.zh-CN.md) — new to these tools? Start with the scripted, model-free workflow.
 - [上下文打包中文入门](https://github.com/L1Huash1/context-budgetpack/blob/main/README.zh-CN.md) · [工具失败与恢复中文入门](https://github.com/L1Huash1/tool-mockbox/blob/main/README.zh-CN.md)
 - [MCP 中文入门](https://github.com/L1Huash1/mcp-changecheck/blob/main/README.zh-CN.md) · [Report walkthrough](https://github.com/L1Huash1/mcp-changecheck/blob/main/docs/walkthrough.md)
